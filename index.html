@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style/web.css">
+  <title>Nova - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href='assets/style/modal.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/style/timeline.css">
+  <link rel="stylesheet" href="assets/style/card.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top modern-nav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">
+        <span class="gradient-text">Nova</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#proyek">Proyek</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeri">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-kontak" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <video playsinline autoplay muted loop class="hero-video">
+      <source src="assets/img/codingbg.mp4" type="video/mp4">
+    </video>
+    <div class="container hero-content">
+      <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+        <div class="profile-image-container" data-aos="zoom-in" data-aos-delay="300">
+          <img class="profile-image" src="assets/img/profile.jpeg" alt="Nova Profile">
+        </div>
+        <h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">
+          <span class="wave">👋</span> Haii, nama saya <br>
+          <span class="gradient-text">Agus Nova</span>
+        </h1>
+        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="700">
+          Mahasiswa semester 6 program studi teknik informatika di Kampus Institut Bisnis Dan Teknologi Indonesia, Saat
+          ini saya fokus pada Front-End Development dan UI/UX Design dan sedang mencari kesempatan untuk berkontribusi
+          dalam tim yang inovatif.
+        </p>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="900">
+          <a href="#tentang" class="btn btn-modern-primary">Yuk kenalan lebih jauh..</a>
+          <a href="#kontak" class="btn btn-modern-outline">Chat</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang" class="section-modern">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-subtitle">Silakan telusuri lebih lanjut untuk melihat rekam jejak pendidikan, proyek, dan
+          pengalaman profesional yang saya miliki.</p>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="about-card">
+            <div class="about-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <h3>Profile Saya</h3>
+            <p>Perkenankan, saya Nova. Seorang mahasiswa Teknik Informatika yang memiliki antusiasme tinggi dalam
+              memecahkan masalah melalui teknologi. Saat ini, saya sedang mendalami dunia pemrograman dengan tujuan
+              membangun karir sebagai seorang software developer yang andal. Di luar aktivitas akademis, saya gemar
+              bermain game strategis dan menonton film, aktivitas yang saya yakini dapat mengasah kreativitas dan
+              kemampuan berpikir logis saya.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="about-card">
+            <div class="about-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Perjalanan Sekolah Saya</h3>
+            <p>Minat saya terhadap teknologi telah tumbuh sejak dini. Perjalanan akademis saya dimulai dari SMK jurusan
+              Perhotelan, sebuah pengalaman berharga yang membentuk kedisiplinan dan keterampilan interpersonal saya.
+              Pengalaman tersebut justru semakin menguatkan panggilan saya untuk kembali ke passion utama di bidang
+              teknologi. Kini, saya mendedikasikan diri sepenuhnya pada program studi Teknik Informatika, di mana saya
+              menemukan bahwa proses coding dan pengembangan perangkat lunak adalah bidang yang benar-benar ingin saya
+              tekuni.</p>
+            <button type="button" class="btn btn-modern-primary mt-3" data-bs-toggle="modal"
+              data-bs-target="#pendidikanModal">
+              <i class="fas fa-book"></i> Lihat Riwayat Sekolah
+            </button>
+          </div>
+        </div>
+
+        <div class="col-12" data-aos="fade-up">
+          <div class="about-card">
+            <div class="about-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Pengalaman & Yang Sudah Saya Pelajari</h3>
+            <p>Sebagai seorang pembelajar yang proaktif, saya selalu berusaha mengaplikasikan pengetahuan saya ke dalam
+              proyek-proyek nyata. Beberapa di antaranya adalah pengembangan website portofolio ini, aplikasi pemutar
+              musik, dan eksplorasi sistem informasi perpustakaan menggunakan Java. Saya juga memiliki ketertarikan pada
+              bidang Machine Learning dan telah bereksperimen dengan pembuatan model prediksi sederhana.
+
+              Saya memiliki pengalaman magang industri selama 4 bulan sebagai DevOps Intern di Kerthi Bali Santhi. Dalam
+              peran ini, saya mendapatkan kesempatan berharga untuk terlibat langsung dalam proyek "Bali Heritage", di
+              mana saya turut berkontribusi dalam proses pengelolaan dan otomatisasi infrastruktur aplikasi.
+            </p>
+
+            <div class="skills-container mt-4">
+              <div class="skill-item">
+                <span class="skill-name">HTML & CSS</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 40%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span class="skill-name">Java</span>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 35%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="modal fade" id="pendidikanModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content modern-modal">
+        <div class="modal-header">
+          <h5 class="modal-title">Riwayat Sekolah Aku</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="timeline">
+            <div class="timeline-item" style="--accent-color:#41516C">
+              <div class="timeline-date">2010-2016</div>
+              <div class="timeline-content">
+                <h6>SD 6 Dauh Puri</h6>
+              </div>
+            </div>
+            <div class="timeline-item" style="--accent-color:#FBCA3E">
+              <div class="timeline-date">2016-2019</div>
+              <div class="timeline-content">
+                <h6>SMP PGRI 4 Badung</h6>
+              </div>
+            </div>
+            <div class="timeline-item" style="--accent-color:#E24A68">
+              <div class="timeline-date">2019-2022</div>
+              <div class="timeline-content">
+                <h6>SMK PGRI 1 Badung</h6>
+              </div>
+            </div>
+            <div class="timeline-item" style="--accent-color:#4c2991">
+              <div class="timeline-date">2022-Sekarang</div>
+              <div class="timeline-content">
+                <h6>Institut Bisnis Dan Teknologi</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="proyek" class="section-dark">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title text-white">Portofolio Proyek</h2>
+        <p class="section-subtitle text-light">Kumpulan proyek yang telah saya kembangkan untuk mengaplikasikan dan
+          memperdalam keahlian saya di bidang teknologi.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/pro2.png" alt="Web Portfolio">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/toukahouse/myprotofolio.git" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <!-- <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5>Website Portfolio</h5>
+              <div class="project-tech">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">Bootstrap</span>
+              </div>
+              <p>Pengembangan sebuah website portofolio personal dari nol untuk menampilkan profil dan proyek-proyek
+                saya. Dibangun menggunakan HTML, CSS, dan diimplementasikan dengan framework Bootstrap untuk memastikan
+                desain yang responsif dan modern.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/pro1.png" alt="Sistem Perpustakaan">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5>Aplikasi Perpustakaan</h5>
+              <div class="project-tech">
+                <span class="tech-badge">Java</span>
+                <span class="tech-badge">NetBeans</span>
+              </div>
+              <p>Proyek akademis untuk merancang dan membangun sebuah sistem manajemen perpustakaan desktop. Aplikasi
+                ini menerapkan fungsionalitas dasar database (CRUD - Create, Read, Update, Delete) dan dikembangkan
+                sepenuhnya menggunakan bahasa pemrograman Java dengan IDE NetBeans.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/pro3.png" alt="Peramalan Saham">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/toukahouse/PeramalanSahamLSTM.git" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5>Eksplorasi Machine Learning: Prediksi Saham</h5>
+              <div class="project-tech">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">Belajar ML</span>
+              </div>
+              <p>Sebuah proyek eksplorasi untuk mempelajari penerapan Machine Learning pada kasus prediksi harga saham.
+                Proyek ini melibatkan analisis data historis dan pembuatan model prediksi sederhana menggunakan Python
+                dengan library seperti Pandas dan Scikit-learn.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="800">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/img/pro4.png" alt="Project Baru">
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="https://github.com/toukahouse/My-Chat-Bot.git" class="project-link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <!-- <a href="#" class="project-link">
+                    <i class="fas fa-external-link-alt"></i>
+                  </a> -->
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h5>Chat Bot AI</h5>
+              <div class="project-tech">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">Python</span>
+              </div>
+              <p>Sebuah proyek pengembangan chatbot cerdas yang dirancang untuk dapat melakukan percakapan roleplay
+                secara dinamis dan kontekstual. Proyek ini memanfaatkan kekuatan Google's Gemini API untuk menghasilkan
+                respons teks yang kreatif dan sesuai dengan persona karakter yang ditentukan. Fokus utama proyek ini
+                adalah pada integrasi API, rekayasa prompt (prompt engineering) untuk mengarahkan perilaku AI, dan
+                mengelola alur percakapan agar tetap koheren.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeri" class="section-modern">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Galeri</h2>
+        <p class="section-subtitle">Beberapa momen yang menangkap perjalanan saya dalam belajar, berkolaborasi, dan
+          berbagi pengetahuan di dunia teknologi.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-card">
+            <img src="assets/img/pp1.png" alt="Foto Nova 1" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h5>Sesi Kolaborasi Tim</h5>
+                <p>Momen diskusi dan coding bersama tim dalam pengembangan proyek Bali Heritage. Saya percaya kolaborasi
+                  adalah kunci untuk menghasilkan solusi terbaik.
+                </p>
+                <button class="btn-gallery" onclick="openImageModal('assets/img/pp1.png')">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="400">
+          <div class="gallery-card">
+            <img src="assets/img/pp2.png" alt="Foto Nova 2" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h5>Presentasi Konsep Teknis</h5>
+                <p>Mempresentasikan arsitektur dan alur kerja proyek di hadapan rekan-rekan. Saya sangat menikmati
+                  proses menyederhanakan konsep teknis yang kompleks agar mudah dipahami oleh semua anggota tim.</p>
+                <button class="btn-gallery" onclick="openImageModal('assets/img/pp2.png')">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="600">
+          <div class="gallery-card">
+            <img src="assets/img/pp3.png" alt="Foto Nova 3" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h5>Demonstrasi Aplikasi</h5>
+                <p>Melakukan demonstrasi fungsionalitas aplikasi dalam sesi review proyek. Momen seperti ini sangat
+                  berharga untuk melatih saya dalam menyampaikan ide dan menerima masukan secara konstruktif.</p>
+                <button class="btn-gallery" onclick="openImageModal('assets/img/pp3.png')">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="gallery-item" data-aos="fade-up" data-aos-delay="800">
+          <div class="gallery-card">
+            <img src="assets/img/profile.png" alt="Foto Nova 4" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h5>Bareng Teman</h5>
+                <p>Foto bareng temen kuliah</p>
+                <button class="btn-gallery" onclick="openImageModal('assets/img/profile.png')">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="1000">
+          <div class="gallery-card">
+            <img src="assets/img/profile.png" alt="Foto Nova 5" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h5>Event Kampus</h5>
+                <p>Ikut acara teknologi di kampus</p>
+                <button class="btn-gallery" onclick="openImageModal('assets/img/profile.png')">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="1200">
+          <div class="gallery-card">
+            <img src="assets/img/profile.png" alt="Foto Nova 6" class="gallery-image">
+            <div class="gallery-overlay">
+              <div class="gallery-content">
+                <h5>Hobby Time</h5>
+                <p>Lagi main game favorit</p>
+                <button class="btn-gallery" onclick="openImageModal('assets/img/profile.png')">
+                  <i class="fas fa-expand"></i>
+                </button>
+              </div>
+            </div>
+          </div> -->
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Modal untuk gambar -->
+  <div class="modal fade" id="imageModal" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 z-3"
+            data-bs-dismiss="modal" style="z-index: 1050;"></button>
+          <img id="modalImage" src="" alt="Gallery Image" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="kontak" class="section-modern">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-subtitle">Saya terbuka untuk diskusi, kolaborasi proyek, dan berbagai kesempatan menarik
+          lainnya.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-card" data-aos="fade-up">
+            <div class="contact-info">
+              <p class="contact-text">
+                Saya selalu antusias untuk terhubung dengan individu maupun tim yang memiliki passion di dunia
+                teknologi. Jika Anda memiliki proyek yang menarik, ingin berdiskusi lebih lanjut, atau melihat potensi
+                kolaborasi, jangan ragu untuk menghubungi saya melalui kanal di bawah ini.
+              </p>
+
+              <div class="contact-methods">
+                <a href="https://www.instagram.com/guss_novaa?igsh=OGQ5ZDc2ODk2ZA==" class="contact-method"
+                  target="_blank">
+                  <div class="contact-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h6>Instagram</h6>
+                    <span>@guss_novaa</span>
+                  </div>
+                </a>
+
+                <a href="https://wa.me/+6281915948457" class="contact-method" target="_blank">
+                  <div class="contact-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div class="contact-details">
+                    <h6>WhatsApp</h6>
+                    <span>+62 819 1594 8457</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2024 Nova.
+            Terima kasih telah mengunjungi portofolio saya.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out-cubic',
+      once: true
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    window.addEventListener('scroll', () => {
+      const navbar = document.querySelector('.modern-nav');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    function openImageModal(imageSrc) {
+      const modal = new bootstrap.Modal(document.getElementById('imageModal'));
+      document.getElementById('modalImage').src = imageSrc;
+      modal.show();
+    }
+  </script>
+
+</body>
+
+</html>
